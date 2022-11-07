@@ -1,0 +1,44 @@
+.btn-group button {
+    background-color: #DDA0DD;
+    border: 3px solid #9400D3;
+    color: white;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer;
+    float: left;
+    width: 250px;
+}
+.btn-group2 button {
+    background-color: #708090;
+    border: 3px solid #FFD700;
+    color: white;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer;
+    float: left;
+    width: 250px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group2:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group2 button:not(:last-child) {
+    border-right: none;
+}
+
+/* Add a background color on hover */
+.btn-group, .btn-group2 button:hover {
+    background-color: #3e8e41;
+}
